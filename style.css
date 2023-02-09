@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./assets/bg.png);
+    background-size: cover;
+    background-position-y: 50px;
+    background-repeat: no-repeat;
+}
+
+/* --------- Navbar --------- */
+nav { 
+    background-color: black;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 0.5fr  10px 3.5fr 1fr;
+    align-items: center;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+nav > div > img {
+    display: block;
+    width: 110px;
+    margin-left: 60px;
+    padding: 15px 0px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.line {
+    content: "";
+    width: 1px;
+    height: 60%;
+    background-color: #fff;
+    margin-left: 30px;
+}
+
+.grow-list {
+    margin-left: 35px;
+}
+
+.list {
+    display: flex;
+    list-style-type: none;
+}
+
+.list-item:first-of-type:after{
+    position: absolute;
+    content: "";
+    box-sizing: border-box;
+    height: 8px;
+    width: 8px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 2px 2px 0px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.list-item {
+    margin: 0px 30px;
+    cursor: pointer;
+}
+
+button {
+    font-family: Poppins;
+    border-radius: 7px;
+    background-color: #BA0CC5;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.button-small {
+    font-weight: 500;
+    height: 35px;
+    width: 150px;
+    margin-left: 20px;
+}
+
+/* --------- Hero Section --------- */
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-heading {
+    font-family: Montserrat;
+    font-size: 70px;
+    width: 70%;
+    text-align: center;
+    margin-top: 130px;
+    color: #FFFFFF;
+}
+
+.hero-description {
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.button-large {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px 23px;
+}
